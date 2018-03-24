@@ -1,0 +1,4 @@
+baseURL = "http://nye.fjeldborg.no/"
+languageCode = "en-us"
+title = "Nye Fjeldborg"
+theme = "Fjeldborg"

@@ -1,1 +1,2 @@
-# nye.fjeldborg.no
+# nye.fjeldborg.no[HUGO]
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Nye Fjeldborg</title>
+    <link>http://nye.fjeldborg.no/post/</link>
+    <description>Recent content in Posts on Nye Fjeldborg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 24 Mar 2018 10:03:54 +0100</lastBuildDate>
+    
+	<atom:link href="http://nye.fjeldborg.no/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello</title>
+      <link>http://nye.fjeldborg.no/post/hello/</link>
+      <pubDate>Sat, 24 Mar 2018 10:03:54 +0100</pubDate>
+      
+      <guid>http://nye.fjeldborg.no/post/hello/</guid>
+      <description> Hello, world! </description>
+    </item>
+    
+  </channel>
+</rss>
