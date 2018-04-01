@@ -1,0 +1,16 @@
+#baseURL = "http://nye.fjeldborg.no/"
+#languageCode = "en-us"
+#title = "Nye Fjeldborg"
+languageCode = "nb-NO"
+title = "Fjeldborg"
+baseURL = "https://nye.fjeldborg.no/"
+theme = ""
+
+[params.posts]
+    foldername = "post"
+    pagesize = "36"
+    featuredpost = "true"
+
+[params.settings]
+    googleanalytics = ""
+    disqus = ""

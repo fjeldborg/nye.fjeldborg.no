@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Nye Fjeldborg</title>
-    <link>http://nye.fjeldborg.no/</link>
-    <description>Recent content on Nye Fjeldborg</description>
+    <title>Fjeldborg</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Fjeldborg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>nb-NO</language>
     <lastBuildDate>Sat, 24 Mar 2018 10:05:09 +0100</lastBuildDate>
     
-	<atom:link href="http://nye.fjeldborg.no/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title></title>
-      <link>http://nye.fjeldborg.no/</link>
+      <link>http://localhost:1313/</link>
       <pubDate>Sat, 24 Mar 2018 10:05:09 +0100</pubDate>
       
-      <guid>http://nye.fjeldborg.no/</guid>
+      <guid>http://localhost:1313/</guid>
       <description> I&amp;rsquo;m your index baby! </description>
     </item>
     
