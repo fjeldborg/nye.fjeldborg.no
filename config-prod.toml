@@ -2,11 +2,10 @@ languageCode = "nb-no"
 title = "Fjeldborg"
 baseURL = "https://fjeldborg.netlify.com/"
 
-[params]
-    pagesize = "36"
 
 [params.posts]
     foldername = "post"
+    pagesize = "6"
     featuredpost = "true"
 
 [params.settings]

@@ -2,11 +2,9 @@ languageCode = "nb-no"
 title = "Fjeldborg"
 baseURL = "http://localhost:1313/"
 
-[params]
-    pagesize = "36"
-
 [params.posts]
     foldername = "post"
+    pagesize = "6"
     featuredpost = "true"
 
 [params.settings]
