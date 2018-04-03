@@ -1,3 +1,9 @@
-contactformaction: 'post-action'
+contactformaction: ''
 
-email: 'post@fjeldborg.no'
+address:
+- line: ''
+- line: ''
+
+phone: ''
+
+email: ''

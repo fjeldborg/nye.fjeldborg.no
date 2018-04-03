@@ -1,14 +1,10 @@
-#baseURL = "http://nye.fjeldborg.no/"
-#languageCode = "en-us"
-#title = "Nye Fjeldborg"
-languageCode = "nb-NO"
+languageCode = "nb-no"
 title = "Fjeldborg"
-baseURL = "https://nye.fjeldborg.no/"
-theme = ""
+baseURL = "https://nye.fjeldborg.no"
 
 [params.posts]
     foldername = "post"
-    pagesize = "36"
+    pagesize = "6"
     featuredpost = "true"
 
 [params.settings]
