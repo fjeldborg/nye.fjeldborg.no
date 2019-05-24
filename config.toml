@@ -1,7 +1,6 @@
 languageCode = "nb-no"
 title = "Fjeldborg"
 baseURL = "http://localhost:1313/"
-theme = "mero"
 
 [params]
   author = "Firstname Lastname"
