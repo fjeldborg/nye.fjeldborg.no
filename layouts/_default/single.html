@@ -1,42 +1,28 @@
-{{ partial "htmlhead" . }}
-	<body class="is-loading">
+{{ define "main" }}
+<main>
+  <h1>
+    <u>{{ .Title }}</u>
+  </h1>
+  <ul class="list-inline">
+    <li class="list-inline-item">
+      {{ .Date.Format "2006-Jan-02" }}
+    </li>
+    <a href="/tags/">
+      <i class="fas fa-tags"></i>
+    </a>
+    {{ range.Params.tags }}
+    <li class="list-inline-item">
+      <a href="/tags/{{ . }}/">
+        {{ . }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-                {{ partial "header" . }}
-                {{ partial "nav" . }}
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Post -->
-                        <section class="post">
-                            <header class="major">
-                                {{ if .Date }}
-                                <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
-                                {{ end }}
-                                <h1>{{ .Title }}</h1>
-                                <p>{{ .Description }}</p>
-                            </header>
-                            {{ if .Params.image }}
-                            <div class="image main"><img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="" /></div>
-                            {{ end }}
-                            {{ .Content }}
-
-                            {{ partial "postcustom" . }}
-
-                            {{ if .Params.disqusid }}
-                            <div id="disqus_thread"></div>
-                            {{ end }}
-                        </section>
-
-					</div>
-
-                    {{ partial "footer/index" . }}
-                    {{ partial "copyright" . }}
-
-			</div>
-            {{ partial "scripts/index" . }}
-	</body>
-</html>
+  <div>
+    <article id="content">
+      {{ .Content }}
+    </article>
+  </div>
+</main>
+{{ end }}
