@@ -2,12 +2,15 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
 
-  <body class="container bg-dark text-white">
-    <div class="wrapper">
-      {{ partial "navbar.html" . }}
-      {{ block "main" . }}
-      {{ end }}
-    </div>
+  <body>
+    <header class="main-header">
+      <div class="content">
+        <a href="{{  .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+        {{ partial "navbar.html" . }}
+      </div>
+    </header>
+    {{ block "main" . }}
+    {{ end }}
     {{ partial "footer.html" . }}
   </body>
 </html>

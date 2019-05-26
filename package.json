@@ -1,0 +1,24 @@
+{
+  "name": "nye.fjeldborg.no",
+  "version": "1.0.0",
+  "description": "Ny blogg for fjeldborg.no",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjeldborg/nye.fjeldborg.no.git"
+  },
+  "author": "Vidar Aune Westrum",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/fjeldborg/nye.fjeldborg.no/issues"
+  },
+  "homepage": "https://github.com/fjeldborg/nye.fjeldborg.no#readme",
+  "devDependencies": {
+    "@dolittle/styles": "^3.0.2",
+    "autoprefixer": "^9.5.1",
+    "postcss-cli": "^6.1.2"
+  }
+}

@@ -1,15 +1,15 @@
 {{ define "main" }}
 <main>
-    <h1>{{ .Title }}</h1>
-    <table class="table table-striped">
-        {{ range .Pages }}
-        <tr>
-            <td>{{ .Date.Format "2006-Jan-02" }}</td>
-            <td>
-                <a href="{{.Permalink}}">{{.Title}}:</a> {{ .Description }}
-            </td>
-        </tr>
-        {{ end }}
-    </table>
+  {{ range where .Pages "Type" "posts"}}
+  <article>
+    <h1>
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h1>
+    <p>{{ .Date.Format "02 Jan 2006" }}</p>
+    <p>{{ .Content }}</p>
+  </article>
+  {{ end }}
 </main>
 {{ end }}

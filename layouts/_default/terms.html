@@ -1,16 +1,17 @@
 {{ define "main" }}
 <main>
-  <h1 id="title">{{ .Title }}</h1>
-  <div class="d-flex flex-row flex-wrap mb-3">
+  <h2>TERMS.html</h2>
+  <h1>{{ .Title }}</h1>
+  <div>
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms }}
-    <div class="p-1 border rounded m-1">
-      <h3 class="m-0">
+    <div>
+      <h3>
         <a href="/{{ $data.Plural }}/{{ $key | urlize }}">
           {{ $key }}
         </a>
       </h3>
-      <p class="ml-2">{{ len $value }} posts.</p>
+      <p>{{ len $value }} posts.</p>
     </div>
     {{ end }}
   </div>

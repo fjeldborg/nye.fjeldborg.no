@@ -3,26 +3,16 @@
   <h1>
     <u>{{ .Title }}</u>
   </h1>
-  <ul class="list-inline">
-    <li class="list-inline-item">
-      {{ .Date.Format "2006-Jan-02" }}
-    </li>
-    <a href="/tags/">
-      <i class="fas fa-tags"></i>
-    </a>
-    {{ range.Params.tags }}
-    <li class="list-inline-item">
-      <a href="/tags/{{ . }}/">
-        {{ . }}
-      </a>
-    </li>
-    {{ end }}
-  </ul>
+  {{ .Date.Format "2006-Jan-02" }}
+  <a href="/tags/">
+    <i class="fas fa-tags"></i>
+  </a>
+  {{ range.Params.tags }}
+  <a href="/tags/{{ . }}/">
+    {{ . }}
+  </a>
+  {{ end }}
 
-  <div>
-    <article id="content">
-      {{ .Content }}
-    </article>
-  </div>
+  {{ .Content }}
 </main>
 {{ end }}

@@ -1,0 +1,18 @@
+@import "../Settings/all";
+@import "../../../node_modules/@dolittle/styles/src/styles/Tools/all";
+.main-header {
+  width: 100vw;
+  .content {
+    @extend %fixed-width-at-desktop-lg;
+    @extend %flex-container-horizontal;
+    justify-content: space-between;
+    padding: $grid-gutter;
+  }
+  a {
+    color: $color-gray-darkest;
+    &.site-title {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+}
