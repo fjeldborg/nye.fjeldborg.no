@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
-
   <body>
     <header class="main-header">
       <div class="content">
+          <a class="target-burger">
+              <ul class="buns">
+                <li class="bun"></li>
+                <li class="bun"></li>
+              </ul>
+            </a>
         <a href="{{  .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
         {{ partial "navbar.html" . }}
       </div>
