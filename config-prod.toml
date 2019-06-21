@@ -1,13 +1,54 @@
 languageCode = "nb-no"
 title = "Fjeldborg"
-baseURL = "https://fjeldborg.netlify.com/"
+baseURL = "http://localhost:1313/"
+
+[params]
+  author = "Article Author"
+  description = "My awesome blog"
+
+[menu]
+  [[menu.main]]
+    identifier = "samarbeidspartnere"
+    name = "Samarbeidspartnere"
+    title = "samarbeidspartnere"
+    url = "/samarbeidspartnere/"
+    weight = 100
 
 
-[params.posts]
-    foldername = "post"
-    pagesize = "6"
-    featuredpost = "true"
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    title = "categories"
+    url = "/categories/"
+    weight = 300    
 
-[params.settings]
-    googleanalytics = ""
-    disqus = ""
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    title = "tags"
+    url = "/tags/"
+    weight = 400 
+
+[params.social]
+  [[params.social.list]]
+  class = "fab"
+  icon = "fa-linkedin-in"
+  url = "#"
+
+  [[params.social.list]]
+  class = "fab"
+  icon = "fa-github"
+  url = "#"
+
+  [[params.social.list]]
+  class = "fab"
+  icon = "fa-twitter"
+  url = "#"
+
+  [[params.social.list]]
+  class = "fab"
+  icon = "fa-stack-overflow"
+  url = "#"  
+
+[params.footer]
+  message = "&copy; 2018 Fjeldborg"
