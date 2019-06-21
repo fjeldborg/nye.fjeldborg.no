@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "head.html" . }}
-  <body>
+{{ partial "head.html" . }}
+
+<body>
     <header class="main-header">
-      <div class="content">
-          <a class="target-burger">
-              <ul class="buns">
-                <li class="bun"></li>
-                <li class="bun"></li>
-              </ul>
+        <div class="content">
+            <a href="{{  .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
+            <a class="target-burger" href="#main-nav">
+                <div class="bun"></div>
+                <div class="bun"></div>
             </a>
-        <a href="{{  .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
-        {{ partial "navbar.html" . }}
-      </div>
+            {{ partial "navbar.html" . }}
+        </div>
     </header>
-    {{ block "main" . }}
-    {{ end }}
-    {{ partial "footer.html" . }}
-  </body>
+    {{ block "main" . }} {{ end }} {{ partial "footer.html" . }} {{ $mainscript := resources.Get "scripts/main.js" }}
+
+    <script src="{{ $mainscript.RelPermalink }}"></script>
+
+</body>
+
 </html>
