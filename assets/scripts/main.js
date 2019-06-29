@@ -1,16 +1,13 @@
-var hamburger = document.querySelector('.target-burger');
-var mainNavigation = document.getElementById('main-nav')
+var app = new Vue({
+  el: "#app",
+  data: {
+    navigationOpen: false
+  },
+  methods: {
+    toggleMenu: function() {
+      console.log("toggleMenu");
 
-var toggleActiveMenuClass = function(element, className) {
-  if (element.classList.contains(className)) {
-    element.classList.remove(className);
-  } else {
-    element.classList.add(className);
+      this.navigationOpen = !this.navigationOpen;
+    }
   }
-};
-
-hamburger.addEventListener('click', function(event) {
-  toggleActiveMenuClass(event.target, 'toggled');
-  toggleActiveMenuClass(mainNavigation, 'expanded');
-  event.preventDefault();
 });

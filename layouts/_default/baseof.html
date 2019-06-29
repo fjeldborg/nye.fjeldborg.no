@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{ partial "head.html" . }}
+  {{ partial "head.html" . }}
 
-<body>
-    <header class="main-header">
+  <body>
+    <div id="app">
+      <header class="main-header">
         <div class="content">
-            <a href="{{  .Site.BaseURL }}" class="site-title">{{ .Site.Title }}</a>
-            <a class="target-burger" href="#main-nav">
-                <div class="bun"></div>
-                <div class="bun"></div>
-            </a>
-            {{ partial "navbar.html" . }}
+          <a
+            href="{{  .Site.BaseURL }}"
+            class="site-title"
+            >{{ .Site.Title }}</a
+            >
+            <a
+            class="target-burger"
+            href="#"
+            v-on:click="toggleMenu"
+            v-bind:class="{ expanded: navigationOpen }"
+          >
+            <div class="bun"></div>
+            <div class="bun"></div>
+          </a>
+          {{ partial "navbar.html" . }}
         </div>
-    </header>
-    {{ block "main" . }} {{ end }} {{ partial "footer.html" . }} {{ $mainscript := resources.Get "scripts/main.js" }}
-
+      </header>
+      {{ block "main" . }} {{ end }} {{ partial "footer.html" . }}
+    </div>
+    {{ $mainscript := resources.Get "scripts/main.js" }}
     <script src="{{ $mainscript.RelPermalink }}"></script>
-
-</body>
-
+  </body>
 </html>

@@ -24,7 +24,7 @@
                 cursor: pointer;
                 opacity: 0.45;
             }
-            &.toggled {
+            &.expanded {
                 .bun {
                     transform: rotate(45deg) translateZ(0) translateY(0.3rem);
                     &:last-child {

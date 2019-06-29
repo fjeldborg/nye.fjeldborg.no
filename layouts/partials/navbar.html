@@ -1,4 +1,4 @@
-<nav id="main-nav">
+<nav class="main-nav" v-bind:class="{ expanded: navigationOpen }">
     {{ range.Site.Menus.main }}
     <a href="{{ .URL }}">
         <span>{{ .Name }}</span>
